@@ -63,7 +63,8 @@ class CartEditField extends FormField{
 		$customcartdata = array(
 			'Items' => $editables
 		);
-		$this->extend('onBeforeRender', $editables, $customcartdata);
+		//this shit breaks things
+		//$this->extend('onBeforeRender', $editables, $customcartdata);
 
 		return SSViewer::execute_template(
 			$this->template,
